@@ -164,15 +164,20 @@
   });
     
   // :: Masonary Gallery Active Code
+  
   if ($.fn.imagesLoaded) {
+    
+
     $(".gallery_full_width_images_area").imagesLoaded(function () {
       // Filter items on button click
-        
+      
+
         $(".portfolio-menu").on("click", "button", function () {
         
         var filterValue = $(this).attr("data-filter");
+        
         $grid.isotope({
-           filter: filterValue,
+          filter: filterValue,
         });
         });
         
