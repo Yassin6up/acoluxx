@@ -2423,10 +2423,11 @@ p {
     bottom: 180%;
   }
   #myVideo{
-    position: absolute;
-    bottom: 100vh;
+    position: relative;
     
-    
+    height: 100%;
+    left: 0;
+    right: 0;
   }
   #home{
     min-height: 100vh;
