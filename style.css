@@ -89,6 +89,15 @@ h6 {
   font-family: "Raleway", sans-serif;
   color: #a6ff00;
 }
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-width: 100%; 
+  min-height: 100vh;
+}
+
 .span{
   font-size: 25px;
   color: #a8ce3d;
