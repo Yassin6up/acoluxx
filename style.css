@@ -2425,10 +2425,7 @@ p {
   #myVideo{
     position: relative;
     width: auto;
-    transform: scale(1);
-    height: 100%;
-    left: 0;
-    right: 0;
+    height: 100%
   }
   #home{
     min-height: 100vh;
