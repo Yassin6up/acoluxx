@@ -70,6 +70,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -79,6 +80,7 @@ body {
 }
 html{
   scroll-behavior: smooth;
+  
 }
 h1,
 h2,
@@ -91,11 +93,12 @@ h6 {
 }
 
 #myVideo {
-  position: absolute;
-  right: 0;
-  top: 0;
+  position: absolute; 
+  right: 0; 
+  top: 0; 
   min-width: 100%; 
-  min-height: 100vh;
+  min-height: 100vh; 
+  
 }
 
 .span{
@@ -2419,6 +2422,16 @@ p {
     right: 30px;
     bottom: 180%;
   }
+  #myVideo{
+    position: absolute;
+    bottom: 100vh;
+    
+    
+  }
+  #home{
+    min-height: 100vh;
+  }
+
 }
 @media (min-width: 1000px) {
   .social_links_area {
