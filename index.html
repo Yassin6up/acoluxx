@@ -86,8 +86,8 @@
 
     <!-- ***** Wellcome Area Start ***** -->
     <section class="welcome_area trail-welcome-area clearfix" id="home">
-      <canvas id="world"></canvas>
-
+      <!-- <canvas id="world"></canvas> -->
+      
       <div class="trail-welcome-content">
         <div class="container h-100">
           <div class="row h-100 align-items-center">
@@ -1743,9 +1743,25 @@ comfortable living.
       </div> -->
     </section>
     <!-- ***** Footer Area End ***** -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
-
-    <!-- jQuery-2.2.4 js -->
+<script>
+  VANTA.BIRDS({
+    el: "#home",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x141414,
+    color1: 0xa8ce3d,
+    color2: 0xa6ff00
+  })
+  </script>
+<!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
     <script src="js/bootstrap/popper.min.js"></script>
