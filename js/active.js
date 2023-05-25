@@ -184,6 +184,7 @@
         // Init Isotope
         var $grid = $(".gallery_full_width_images_area").isotope({
         itemSelector: ".portfolio_gallery_iteam",
+        filter: '.control',
         percentPosition: true,
       });
     });
