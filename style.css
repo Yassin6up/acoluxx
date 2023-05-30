@@ -80,7 +80,7 @@ body {
 }
 html{
   scroll-behavior: smooth;
-  
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -1533,12 +1533,49 @@ p {
 ========================== */
 
 .our-service-area {
+  position: relative;
+  height: fit-content;
+  
+  
 }
+@media (max-width:500px) {
+  
+  .our-service-area {
+    margin-bottom: 100pc;
+  }
+}
+@media (min-width:500px) {
+  
+  .our-service-area {
+    margin-bottom: 80pc;
+  }
+}
+@media (min-width:650px) {
+  
+  .our-service-area {
+    margin-bottom: 70pc;
+  }
+}
+@media (min-width:750px) {
+  
+  .our-service-area {
+    margin-bottom: 30pc;
+  }
+}
+@media (min-width:1000px) {
+  
+  .our-service-area {
+    margin-bottom: -10pc;
+  }
+}
+/* .our-service-area .container{
+  height: fit-content !important;
+} */
 
 .single-service {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 100%;
-  height: 100%;
+  /* height: fit-content; */
 
 }
 
@@ -2192,6 +2229,7 @@ p {
 
 .our-team-area {
   /* background-color: #f2f4f8; */
+  position:relative;
 }
 
 .our-team-area .section-heading > p {
