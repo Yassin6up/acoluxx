@@ -101,6 +101,10 @@ h6 {
   
 }
 
+
+
+
+
 .span{
   font-size: 25px;
   color: #a8ce3d;
@@ -244,6 +248,7 @@ h6 {
 img {
   max-width: 100%;
   height: auto;
+  aspect-ratio: 1/1;
 }
 
 .mt-15 {
@@ -1532,6 +1537,9 @@ p {
 
 .single-service {
   margin-bottom: 50px;
+  width: 100%;
+  height: 100%;
+
 }
 
 .our-service-area .section-heading > p {
@@ -1552,6 +1560,39 @@ p {
   font-size: 48px;
   font-size: 3rem;
 }
+
+@media (min-width: 1000px) {
+ 
+  .single-service{
+    position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  }
+  .single-service:hover{
+    transform: rotateY(180deg);
+  }
+  .single-service > p , .single-service h5{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+  .single-service > p {
+    background-color: #406200;
+    border-radius:5px;
+    border:5px solid #406200 ;
+    color: white;
+    height: 220px;
+    display: grid;
+    place-content: center;
+    transform: rotateY(180deg);
+  }
+}
+
 
 /* ======================
 :: 10.0 Feature Area CSS  
@@ -2075,11 +2116,14 @@ p {
     width:100%;
     display: flex;
     flex-wrap: wrap;
+    height: 100vh;
 }
 .cercle div{
     width:100%;
-    display: grid ; 
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* =============================
@@ -2649,6 +2693,80 @@ p {
 :: 22.0 Header Subscribe Area CSS   
 ============================= */
 
+.featureHome{
+  margin: 10px;
+  margin-left: 30px;
+  padding:5px;
+  display: flex;
+
+  flex-direction: column;
+  
+  gap: 10px;
+  justify-content: space-around;
+}
+.featureHome li{
+  padding-left: 10px;
+  border-left: 5px solid #a6ff00;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* .featureHome li:nth-child(2) {
+  margin-left: 15px;
+}
+.featureHome li:nth-child(3) {
+  margin-left: 25px;
+}
+.featureHome li:nth-child(4) {
+  margin-left: 35px;
+}
+.featureHome li:nth-child(5) {
+  margin-left: 45px;
+}
+.featureHome li:nth-child(6) {
+  margin-left: 55px;
+}
+.featureHome li:nth-child(7) {
+  margin-left: 65px;
+}
+.featureHome li:nth-child(8) {
+  margin-left: 75px;
+} */
+
+
+
+
+
+.featureHome li i{
+  color: #a6ff00 !important ;
+  font-size: large;
+}
+/* .featureHome li::before{
+  content: "";
+  height: 50px;
+  width: 5px;
+  background-color: #a6ff00;
+  position: absolute;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== */
 .subscribe--area {
   height: 800px;
   background-color: #f6f7f9;

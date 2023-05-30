@@ -10,7 +10,7 @@
         // Variables
         var navContainer = $('.classy-nav-container');
         var classy_nav = $('.classynav ul');
-        var classy_navli = $('.classynav > ul > li');
+        var classy_navli = $('.classynav  ul  li');
         var navbarToggler = $('.classy-navbar-toggler');
         var closeIcon = $('.classycloseIcon');
         var navToggler = $('.navbarToggler');
@@ -57,12 +57,19 @@
             closeIcon.on('click', function () {
                 classyMenu.removeClass('menu-on');
                 navToggler.removeClass('active');
+
             });
+
+            
+            
+
+            
+
 
             // add dropdown & megamenu class in parent li class
             classy_navli.has('.dropdown').addClass('cn-dropdown-item');
             classy_navli.has('.megamenu').addClass('megamenu-item');
-
+            
             // adds toggle button to li items that have children
             classy_nav.find('li a').each(function () {
                 if ($(this).next().length > 0) {
@@ -125,3 +132,9 @@
         });
     };
 }(jQuery));
+
+
+
+
+
+

@@ -19,7 +19,7 @@
       crossorigin="anonymous"></script>
     <!-- Core Stylesheet -->
     <link href="style.css" rel="stylesheet" />
-    
+    <script defer src="main.js"></script>
     <!-- Responsive CSS -->
     <link href="css/responsive.css" rel="stylesheet" />
   </head>
@@ -42,18 +42,18 @@
           <nav class="classy-navbar justify-content-between" id="classyNav">
             <!-- Logo -->
             <a class="navbar-brand-logo" href="index.html"
-              ><img src="./img/logo/logo.png"
+              ><img style="aspect-ratio: 0/0;" src="./img/logo/logo.png"
             /></a>
 
             <!-- Navbar Toggler -->
-            <div class="classy-navbar-toggler">
-              <span class="navbarToggler"
+            <div class="classy-navbar-toggler " >
+              <span class="navbarToggler" id="tog"
                 ><span></span><span></span><span></span
               ></span>
             </div>
 
             <!-- Menu -->
-            <div class="classy-menu">
+            <div class="classy-menu"id="menu">
               <!-- close btn -->
               <div class="classycloseIcon">
                 <div class="cross-wrap">
@@ -97,9 +97,7 @@
               <div class="welcome-text vimeo text-center">
                 <h2>Acolux Smart</h2>
                 <p>
-                  The place for all smart & green solutions Towards comfort
-                  <br />
-                  zero-carbon emission buildings
+                  Welcome to Acolux Smart Solutions, the leader in all Smart and Green technologies
                 </p>
                 <a href="#works" class="blink-btn mt-15">View our Works</a>
               </div>
@@ -139,6 +137,51 @@
       </div>
     </section>
     <!-- ***** About Area End ***** -->
+<!-- ***** About Area Start ***** -->
+<section
+class="about-area clearfix section_padding_90_100 d-lg-flex align-items-center"
+id="about">
+<!-- About Image -->
+<!-- About Content Area -->
+<div class="about--content-area">
+  <div class="about-text">
+    <h2>Our vision</h2>
+    <!-- <h6>
+      We are committed to customers success from start to finish. Our
+      input helps make their solutions stand out from the crowd.
+    </h6> -->
+    <p>
+      To create an extraordinary experience within someone's living space who has the passion for an energy efficient, intelligent & comfortable living. Moreover, spreading the awareness of the importance of home automation, renewable energy & energy management, is part of an individual's contribution to minimizing the carbon footprint and saving the earth.
+    </p>
+  </div>
+</div>
+<div class="about-thumbnail-area">
+  <img src="https://t4.ftcdn.net/jpg/02/19/97/89/360_F_219978944_Q0f2jy0m9RwbIMNqIgEVRGJXdS2DwfbD.jpg" alt="" />
+</div>
+</section>
+<section
+class="about-area clearfix section_padding_90_100 d-lg-flex align-items-center"
+id="about">
+<!-- About Image -->
+<div class="about-thumbnail-area">
+  <img src="https://media.istockphoto.com/id/1346944001/photo/close-up-of-co-workers-stacking-their-hands-together.jpg?s=612x612&w=0&k=20&c=lidJcFUSR3rkMt4B0yoNwH55lz3sth9o2280keqBXGE=" alt="" />
+</div>
+<!-- About Content Area -->
+<div class="about--content-area">
+  <div class="about-text">
+    <h2>Our Team</h2>
+    <!-- <h6>
+      We are committed to customers success from start to finish. Our
+      input helps make their solutions stand out from the crowd.
+    </h6> -->
+    <p>
+      The success of ACOLUX comes from our valued & respected team, who has been trained & empowered to enrich our client’s journey with ACOLUX. We are a diverse team with different backgrounds & experiences which make creativity & innovation flourish. 
+    </p>
+  </div>
+</div>
+
+</section>
+<!-- ***** About Area End ***** -->
 
     <!-- ***** Feature Area Start ***** -->
     <section class="clearfix" id="sulotion">
@@ -148,16 +191,40 @@
           <!-- Section Heading Area -->
           <div class="section-heading">
             <h2>SOLUTIONS & SERVICES</h2>
-            <p>
-              Starting from a simple smart solution to a fully integrated home
-              automation system, we customize to connect unlimited number of
-              products to be controlled via a touch of a button at home or
-              remotely. Acolux team will work closely with you to make your
-              dream come true!
-            </p>
+            
           </div>
           <!-- Feature Area -->
           <div class="feature_area">
+             <!-- Single Feature -->
+             <div class="single_feature">
+              <!-- Feature Icon -->
+              <div class="feature_icon">
+                <i class="fa-solid fa-home"></i>
+              </div>
+              <!-- Single Feature Text -->
+              <div class="single_feature_text">
+                <h5>Home Automation</h5>
+                <p>
+                  Starting from a simple smart solution to a fully integrated home
+                  automation system, we customize to connect unlimited number
+                  of products to be controlled via a touch of a button at home or
+                  remotely. Acolux team will work closely with you to make your
+                  dream come true!
+                  <ul class="featureHome">
+                    <li>Lighting & Shading Control <i class="fa-regular fa-lightbulb" style="color: #ffffff;"></i> </li>
+                    <li>AC control  <i class="fa-solid fa-temperature-low" style="color: #ffffff;"></i> </li>
+                    <li>Audio Visual <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i></li>
+                    <li>Home Theaters <i class="fa-solid fa-tv" style="color: #ffffff;"></i></li>
+                    <li>Home Cinemas <i class="fa-solid fa-film" style="color: #ffffff;"></i></li>
+                    <li>Video Intercom <i class="fa-solid fa-walkie-talkie" style="color: #ffffff;"></i></li>
+                    <li>Wiring Accessories <i class="fa-solid fa-plug-circle-bolt" style="color: #ffffff;"></i></li>
+                    <li>CCTV <i class="fa-solid fa-video" style="color: #ffffff;"></i> </li>
+                  </ul>
+
+                </p>
+                <h2>01</h2>
+              </div>
+            </div>
             <!-- Single Feature -->
             <div class="single_feature">
               <!-- Feature Icon -->
@@ -270,12 +337,13 @@
             <div
               class="single-service text-center  wow fadeInUp"
               data-wow-delay="0.2s">
-              <i class="fa-regular fa-1" style="color: #ffffff"></i>
-              <h5> Consultation</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              
+              <i class="fa-regular fa-comments" style="color: #ffffff;"></i>
+            
+              <h5><span class="span">1#</span> Consultation</h5>
+              <p>
+                We meet with the client, listen to their requirements and advise them with the best solution options accordingly
+              </p>
             </div>
           </div>
           <!-- Single Service Start -->
@@ -283,12 +351,11 @@
             <div
               class="single-service text-center wow fadeInUp"
               data-wow-delay="0.4s">
-              <i class="fa-solid fa-2" style="color: #ffffff"></i>
-              <h5>Commercial proposal</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              <i class="fa-solid fa-chart-line" style="color: #ffffff;"></i>
+              <h5><span class="span">2#</span>Commercial proposal</h5>
+              <p>
+                Will share a quotation according to the agreed solution. Modifications on the proposed system could happen until we reach the ideal solution according to the client needs & requirements
+              </p>
             </div>
           </div>
           <!-- Single Service Start -->
@@ -296,12 +363,11 @@
             <div
               class="single-service text-center wow fadeInUp"
               data-wow-delay="0.6s">
-              <i class="fa-solid fa-3" style="color: #ffffff"></i>
-              <h5>Design & Drawings</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              <i class="fa-solid fa-pencil" style="color: #ffffff;"></i>
+              <h5><span class="span">3#</span>Design & Drawings</h5>
+              <p>
+                After the official confirmation on the agreed solution and proposal, we will share the detailed design along with the drawings. The MEP contractor will use these drawings to pull the required cables according to the design that was agreed on.
+              </p>
             </div>
           </div>
           <!-- Single Service Start -->
@@ -309,12 +375,11 @@
             <div
               class="single-service text-center wow fadeInUp"
               data-wow-delay="0.8s">
-              <i class="fa-solid fa-4" style="color: #ffffff"></i>
-              <h5> Installation & Project Management</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              <i class="fa-solid fa-screwdriver-wrench" style="color: #ffffff;"></i>
+              <h5><span class="span">4#</span> Installation & Project Management</h5>
+              <p>
+                Inspection on the pulled cables will happen prior to the installation stage to make sure that all the cabling works were done perfectly. After that, the installation of the products will occur as per the agreed design & plan.
+              </p>
             </div>
           </div>
           <!-- Single Service Start -->
@@ -322,14 +387,11 @@
             <div
               class="single-service text-center wow fadeInUp"
               data-wow-delay="1s">
-              <i
-                class="fa-solid fa-5"
-                style="color: #ffffff"></i>
-              <h5>Commissioning</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              <i class="fa-regular fa-money-bill-1" style="color: #ffffff;"></i>
+              <h5><span class="span">5#</span>Commissioning</h5>
+              <p>
+                At this stage, after the connection and termination of all products and components, the programming and commissioning of the system will start as per the agreed scenarios mentioned in the designed stage.
+              </p>
             </div>
           </div>
           <!-- Single Service Start -->
@@ -337,14 +399,11 @@
             <div
               class="single-service text-center wow fadeInUp"
               data-wow-delay="1.2s">
-              <i
-                class="fa-solid fa-6"
-                style="color: #ffffff"></i>
-              <h5>Handing Over</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              <i class="fa-solid fa-house-circle-check" style="color: #ffffff;"></i>
+              <h5><span class="span">6#</span>Handing Over</h5>
+              <p>
+                Once the project is ready to be handed over, our team will walk through the completed system with the client and showcase each of the functionalities that have been scoped out and agreed upon. At this stage, the client will see his/her dreams come true.
+              </p>
             </div>
           </div>
           <!-- Single Service Start -->
@@ -352,12 +411,11 @@
             <div
               class="single-service text-center wow fadeInUp"
               data-wow-delay="1.2s">
-              <i class="fa-solid fa-7" style="color: #ffffff"></i>
-              <h5> Training</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              <i class="fa-solid fa-chalkboard-user" style="color: #ffffff;"></i>
+              <h5><span class="span">7#</span> Training</h5>
+              <p>
+                Our systems are user-friendly yet, our clients can enjoy a complimentary training session on the installed system features and functionalities. 
+              </p>
             </div>
           </div>
           <!-- Single Service Start -->
@@ -365,82 +423,160 @@
             <div
               class="single-service text-center wow fadeInUp"
               data-wow-delay="1.2s">
-              <i class="fa-solid fa-8" style="color: #ffffff"></i>
-              <h5>Green Shield</h5>
-              <!-- <p>
-                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
-                officia deserunt mollit anim id est laborum.
-              </p> -->
+              <i class="fa-solid fa-solar-panel" style="color: #ffffff;"></i>
+              <h5><span class="span">8#</span> Green Shield</h5>
+              <p>
+                Once we have the system installed, commissioned, and handed over, it is important for the client to ensure a hassle-free experience with it hence, we recommend to acquire our annual "Green Shield" contract to guarantee a flawless experience with the Acolux system.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ***** Our Service Area End ***** -->
+<!-- <section class="our-service-area section_padding_90_50 clearfix">
+<div class="projectType">
+  <div class="section-heading text-center">
+    <h2>PROJECTS TYPES & SECTORS</h2>
+  </div>
+  <div class="items">
+    <div></div>
+  </div>
+</div>
+</section> -->
 
-    <!-- ***** More fearutes  Area Start ***** -->
-    <section class="more-feature-area clearfix" id="vision" >
-      <div
-        class="feature-thumbnail-area item"
-        style="background-image: url(img/bg-img/feature-1.jpeg)"></div>
-      <!-- Feature Content Area -->
-      <div class="feature-content-area section_padding_90_100 item">
-        <!-- Service Details -->
-        <div class="service-details" >
-          <!-- Section Heading Area -->
-          <div class="section-heading">
-            <h2>Our Vision</h2>
-            <p id="client">
-              To create an extraordinary experience within someone's living
-              space who has the passion for an energy efficient, intelligent &
-              comfortable living. Moreover, spreading the awareness of the
-              importance of home automation, renewable energy & energy
-              management, is part of an individual's contribution to minimizing
-              the carbon footprint and saving the earth.
-            </p>
+    <!-- ***** Our Team Area Start ***** -->
+    <section class="our-team-area section_padding_90_70 clearfix" id="team">
+      <div class="container">
+          <div class="row">
+              <div class="col-12 text-center">
+                  <!-- Heading Text  -->
+                  <div class="section-heading">
+                      <h2>PROJECTS TYPES & SECTORS</h2>
+                    </div>
+              </div>
           </div>
-          <div class="feature_area">
-            <!-- Single Feature -->
-            <div class="single_feature" >
-              <!-- Feature Icon -->
-              <div class="feature_icon">
-                <i class="fa-regular fa-user" style="color: #ffffff"></i>
+
+          <div class="row">
+              <!-- Single Team Member -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="single-team-member text-center">
+                      <div class="member-image">
+                          <img src="https://static.vecteezy.com/system/resources/previews/010/674/501/non_2x/house-cartoon-icon-illustration-building-landmark-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" alt="">
+                          <!-- Overlay -->
+                          
+                      </div>
+                      <div class="member-text">
+                          <h4>Residential</h4>
+                          
+                      </div>
+                  </div>
               </div>
-              <!-- Single Feature Text -->
-              <div class="single_feature_text">
-                <h5>OUR CLIENTS</h5>
-                <p>
-                  We work with industry professionals and end users to provide
-                  effective installation of smart & green solutions. Powerful
-                  performance and long-lasting reliability are what we provide
-                  for architects, designers and business/home owners
-                </p>
-                <h2 id="partner">04</h2>
+
+              <!-- Single Team Member -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="single-team-member text-center">
+                      <div class="member-image">
+                          <img src="https://media.istockphoto.com/id/1083280000/vector/bank-building-facade-university-or-government-institution-public-building-with-high-columns.jpg?s=612x612&w=0&k=20&c=UOpKST_TTKJAXQEASp66HpffutEU4_mQbwFXSs7zmLQ=" alt="">
+                          <!-- Overlay -->
+                          
+                      </div>
+                      <div class="member-text">
+                          <h4>Governmental</h4>
+                      </div>
+                  </div>
               </div>
+
+              <!-- Single Team Member -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="single-team-member text-center">
+                      <div class="member-image">
+                          <img src="https://img.freepik.com/premium-vector/airport-building-landmark-cartoon-illustration_75802-316.jpg" alt="">
+                          <!-- Overlay -->
+                          
+                      </div>
+                      <div class="member-text">
+                          <h4>Airports</h4>
+                          
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Single Team Member -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                  <div class="single-team-member text-center">
+                      <div class="member-image">
+                          <img src="https://static.vecteezy.com/system/resources/previews/006/835/879/original/bank-building-with-columns-flat-cartoon-style-illustration-government-building-financial-house-building-facade-architecture-with-column-front-view-of-bank-isolated-on-white-background-vector.jpg" alt="">
+                          <!-- Overlay -->
+                          
+                      </div>
+                      <div class="member-text">
+                          <h4>Banks</h4>
+                          
+                      </div>
+                  </div>
+              </div>
+              <!-- Single Team Member -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="single-team-member text-center">
+                    <div class="member-image">
+                        <img src="https://img.freepik.com/premium-vector/modern-shopping-mall-building-background-illustration-with-exterior-various-shops-inside_2175-4285.jpg" alt="">
+                        <!-- Overlay -->
+                        
+                    </div>
+                    <div class="member-text">
+                        <h4>Malls & Retail
+                          Shops</h4>
+                        
+                    </div>
+                </div>
             </div>
-            <!-- Single Feature -->
-            <div class="single_feature" >
-              <!-- Feature Icon -->
-              <div class="feature_icon">
-                <i class="fa-regular fa-handshake" style="color: #ffffff"></i>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="single-team-member text-center">
+                  <div class="member-image">
+                      <img src="https://static.vecteezy.com/system/resources/previews/011/922/242/original/hospital-building-cartoon-icon-illustration-healthy-building-icon-concept-isolated-premium-flat-cartoon-style-vector.jpg" alt="">
+                      <!-- Overlay -->
+                      
+                  </div>
+                  <div class="member-text">
+                      <h4>Hospitals</h4>
+                      
+                  </div>
               </div>
-              <!-- Single Feature Text -->
-              <div class="single_feature_text">
-                <h5 >OUR PARTNERS</h5>
-                <p>
-                  Our partners are the heart of our business and hence, we deal
-                  with many high-end suppliers that have a wide range of
-                  products and solutions to cover all market needs. Visit our
-                  website for further information on our partners and their
-                  solutions Website: www.acoluxsmart.com/partners.
-                </p>
-                <h2>05</h2>
-              </div>
-            </div>
           </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single-team-member text-center">
+                <div class="member-image">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/104/853/original/of-colorful-school-building-with-cartoon-style-back-to-school-free-vector.jpg" alt="">
+                    <!-- Overlay -->
+                    
+                </div>
+                <div class="member-text">
+                    <h4>Schools</h4>
+                    
+                </div>
+            </div>
         </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="single-team-member text-center">
+              <div class="member-image">
+                  <img src="https://img.freepik.com/free-vector/young-people-walking-front-college-university-flat-illustration_74855-14224.jpg" alt="">
+                  <!-- Overlay -->
+                  
+              </div>
+              <div class="member-text">
+                  <h4>Universities</h4>
+                  
+              </div>
+          </div>
       </div>
-    </section>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Our Team Area End ***** -->
+
+
+
     <!-- ***** More fearutes Area End ***** -->
 
     <!-- ***** Our Creative Portfolio Area Start ***** -->
@@ -1394,6 +1530,92 @@
     </section>
     <!-- ***** Our Creative Portfolio Area End ***** -->
 
+    <!-- ***** More fearutes  Area Start ***** -->
+    <section class="more-feature-area clearfix" id="client" >
+      <div
+        class="feature-thumbnail-area item"
+        style="background-image: url(https://st2.depositphotos.com/1071909/6630/i/600/depositphotos_66306073-stock-photo-customer-or-employees-care-concept.jpg)"></div>
+      <!-- Feature Content Area -->
+      <div class="feature-content-area section_padding_90_100 item">
+        <!-- Service Details -->
+        <div class="service-details" >
+          <!-- Section Heading Area -->
+          
+          <div class="feature_area">
+            <!-- Single Feature -->
+            <div class="single_feature" >
+              <!-- Feature Icon -->
+              <div class="feature_icon">
+                <i class="fa-regular fa-user" style="color: #ffffff"></i>
+              </div>
+              <!-- Single Feature Text -->
+              <div class="single_feature_text">
+                <h5>OUR CLIENTS</h5>
+                <p>
+                  We work with industry professionals and end users to provide
+                  effective installation of smart & green solutions. Powerful
+                  performance and long-lasting reliability are what we provide
+                  for architects, designers and business/home owners
+                </p>
+                <h2 id="partner">04</h2>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="clearfix mt-100"  id="partner">
+      <div class="row">
+        <div class="col-12">
+          <!-- Heading Text -->
+          <div class="section-heading text-center">
+            <h2 >Our Partner</h2>
+            <p >
+              Our partners are the heart of our business and hence,
+              we deal with many high-end suppliers that have a wide
+              range of products and solutions to cover all market
+              needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="our-partners-area ">
+        <div class="row justify-content-center">
+          
+          <div class="col-12">
+            <div class="partners-slides owl-carousel">
+              <img src="img/partner-img/image1.png" alt="" />
+              <img src="img/partner-img/image2.png" alt="" />
+              <img src="img/partner-img/image3.png" alt="" />
+              <img src="img/partner-img/image4.png" alt="" />
+              <img src="img/partner-img/image5.png" alt="" />
+  
+              <img src="img/partner-img/image6.jpeg" alt="" />
+              <img src="img/partner-img/image7.jpg" alt="" />
+              <img src="img/partner-img/image8.png" alt="" />
+              <img src="img/partner-img/image9.png" alt="" />
+              <img src="img/partner-img/image10.jpg" alt="" />
+  
+              <img src="img/partner-img/image11.png" alt="" />
+              <img src="img/partner-img/image12.jpg" alt="" />
+              <img src="img/partner-img/image13.jpg" alt="" />
+              <img src="img/partner-img/image14.png" alt="" />
+              <img src="img/partner-img/image15.png" alt="" />
+  
+              <img src="img/partner-img/image16.jpeg" alt="" />
+              <img src="img/partner-img/image17.png" alt="" />
+              <img src="img/partner-img/image18.png" alt="" />
+              <img src="img/partner-img/19.jfif" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
     <!-- ***** Testimonials Area Start ***** -->
     <section class="testimonials-area clearfix" id="projects">
       <div class="container-fluid">
@@ -1603,41 +1825,8 @@
             </div>
           </div>
         </div>
-
-        
-        <div class="our-partners-area mt-100">
-          <div class="row justify-content-center">
-            
-            <div class="col-12">
-              <div class="partners-slides owl-carousel">
-                <img src="img/partner-img/image1.png" alt="" />
-                <img src="img/partner-img/image2.png" alt="" />
-                <img src="img/partner-img/image3.png" alt="" />
-                <img src="img/partner-img/image4.png" alt="" />
-                <img src="img/partner-img/image5.png" alt="" />
-
-                <img src="img/partner-img/image6.jpeg" alt="" />
-                <img src="img/partner-img/image7.jpg" alt="" />
-                <img src="img/partner-img/image8.png" alt="" />
-                <img src="img/partner-img/image9.png" alt="" />
-                <img src="img/partner-img/image10.jpg" alt="" />
-
-                <img src="img/partner-img/image11.png" alt="" />
-                <img src="img/partner-img/image12.jpg" alt="" />
-                <img src="img/partner-img/image13.jpg" alt="" />
-                <img src="img/partner-img/image14.png" alt="" />
-                <img src="img/partner-img/image15.png" alt="" />
-
-                <img src="img/partner-img/image16.jpeg" alt="" />
-                <img src="img/partner-img/image17.png" alt="" />
-                <img src="img/partner-img/image18.png" alt="" />
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+      
     <center>
     <div id="googleMap"> <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Al%20Quoz%2019%20street%209a%20Next%20to%20Porsche%20Maintenance%20Center%20%E2%80%93%20Dubai+(Acolux)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a></iframe> </div>
   </center>
@@ -1696,6 +1885,9 @@ Towards comfort & zero-carbon emission buildings
                   <a href="https://www.instagram.com/acoluxsmart/"
                     ><i class="fa fa-instagram" aria-hidden="true"></i
                   ></a>
+                  <a href="https://www.linkedin.com/company/acoluxsmart/"
+                    ><i class="fa fa-linkedin" aria-hidden="true"></i
+                  ></a>
                   <a href="mailto:  info@acoluxsmart.com"
                     ><i class="fa fa-envelope-open" aria-hidden="true"></i
                   ></a>
@@ -1708,9 +1900,7 @@ Towards comfort & zero-carbon emission buildings
               <div class="single_bottom_area mt-5">
                 <h5>Get In Touch</h5>
                 <p>
-                  To create an extraordinary experience within someone's living
-space who has the passion for an energy efficient, intelligent &
-comfortable living. 
+                  Working Hours: Mon to Friday 9:00 am - 6:00 Pm
                 </p>
                 <a href="#" class="d-block"
                   ><i class="fa fa-phone" aria-hidden="true"></i>+97148868215</a
