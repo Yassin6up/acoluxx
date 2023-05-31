@@ -1603,7 +1603,7 @@ p {
   .single-service  p{
     visibility: hidden;
     width: 300px;
-    background-color: #a6ff00;
+    background-color: #588800;
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -1624,7 +1624,7 @@ p {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #a6ff00 transparent transparent transparent;
+    border-color: #588800 transparent transparent transparent;
   }
   .single-service:hover .info{
     visibility: visible;
