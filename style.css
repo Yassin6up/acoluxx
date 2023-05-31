@@ -247,7 +247,7 @@ h6 {
 
 img {
   max-width: 100%;
-  height: auto;
+  
   aspect-ratio: 1/1;
 }
 
@@ -1613,7 +1613,7 @@ p {
     bottom: 100%;
     /* left: 25%; */
     /* margin-left: -60px; */
-    
+
   }
 
   .single-service p::after {
@@ -1622,11 +1622,12 @@ p {
     top: 100%;
     left: 50%;
     margin-left: -5px;
-    border-width: 5px;
+    border-width: 15px;
     border-style: solid;
     border-color: #588800 transparent transparent transparent;
   }
   .single-service:hover .info{
+
     visibility: visible;
   }
 
@@ -2254,7 +2255,7 @@ p {
 
 .member-image > img {
   border-radius: 30px;
-  width: 100%;
+  width: 70%;
 }
 
 .team-overlay-effect {
